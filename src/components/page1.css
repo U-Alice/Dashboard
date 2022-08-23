@@ -88,6 +88,13 @@ color: rgb(226, 226, 226);
     padding-top: 10%;
     border-radius: 2px;
     width: 40%;
+    animation: bounce-1 1s infinite;
+}
+
+@keyframes bounce-1 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10%); }
+  100% { transform: translateY(0); }
 }
 .images{
     display: flex;
@@ -121,9 +128,33 @@ color: rgb(226, 226, 226);
   }
   .mainPage1{
     width: 100%;
-  
+    height: 75vh;
   }
   .side1{
     width: 100%;
+    height: 20%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .page1 {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .header{
+    height: 10vh;
+    flex-wrap: wrap;
+  }
+  .mainPage1{
+    width: 100%;
+    height: fit-content;
+  }
+  .side1{
+    width: 100%;
+    height: 20%;
+  }
+  .section{
+    flex-wrap: wrap;
+    height: fit-content;
+    margin-left: 2%;
   }
 }

@@ -325,7 +325,6 @@ object-fit: contain;
     /* flex-wrap: wrap; */
     width: 40%;
     margin-bottom: 2%;
-
     gap: 2%;
   }
   .team {
@@ -342,6 +341,10 @@ object-fit: contain;
   .bottom{
     display: flex;
     margin: 0;
+  }
+  .bottom img{
+    width: 8vw;
+    height: 4vh;
   }
   .popup{
     width: 80%;

@@ -32,4 +32,23 @@ color: rgb(241, 241, 241);
 font-weight: bold;
 
 }
+@media only screen and (max-width: 1084px){
+    .page2{
+        flex-direction: column;
+    }
+    .table2{
+        margin-left: 10%;
+    }
+    
+}
+@media only screen and (max-width: 600px){
+    .page2{
+        flex-direction: column;
+    }
+    .table2{
+        margin-left: 0%;
+        width: 100%;
+    }
+    
+}
 
