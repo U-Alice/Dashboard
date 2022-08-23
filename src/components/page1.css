@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.mainPage1{
+    display: flex;
+    flex-direction: column;
+    gap:5%;
+    width:76%;
+    background-color: rgba(245, 246, 250, 255);
+    padding: 1%;
+}
+.page1 {
+  display: flex;
+  height: 100%;
+  width:100%
+}
+.search {
+  display: flex;
+  margin-top: 2%;
+}
+.search input {
+  width: 80%;
+  height: 3.5vh;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  padding-left: 4%;
+}
+.search input:focus {
+  outline: none;
+  width: 90%;
+  transition: 1s linear;
+}
+
+.header {
+  display: flex;
+}
+.messageBoxes {
+  display: flex;
+  width: 80%;
+  gap: 2%;
+}
+.messageBoxes div {
+  background-color: rgba(60, 211, 156, 255);
+  width: 46%;
+  border-radius: 20px;
+  padding-top: 2.5%;
+  color: white;
+  text-align: center;
+}
+.section {
+  background-color: rgba(60, 211, 156, 0.885);
+  width: 90%;
+  border-radius: 10px;
+  display: flex;
+  height: 20vh;
+  gap: 2%;
+  padding: 4%
+}
+.section div{
+border-right: 1px solid rgba(245, 246, 250, 255);
+color: rgb(226, 226, 226);
+}
+.info {
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    
+    justify-content: center;
+}
+.info div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    padding-left:4% ;
+    background-color: white;
+    height: 20vh;
+    width: 15%;
+    font-size: 0.8em;
+}
+.info div i {
+    background-color: rgba(219, 108, 108, 0.623);
+    color: white;
+    height: 20%;
+    text-align: center;
+    padding-top: 10%;
+    border-radius: 2px;
+    width: 40%;
+}
+.images{
+    display: flex;
+    gap: 5%;
+    padding-left:10% ;
+}
+.images img{
+    width: 7%;
+    border-radius: 50%;
+    height: 90%;
+
+}
+.side1{
+    background-color: rgba(60, 211, 156, 255);
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    padding: 1%;
+}
+.side1 img{
+    width: 90%;
+    height: 20vh;
+    margin-left: 7.5%;
+    border-radius: 10px;
+
+}
+@media only screen and (max-width: 1084px) {
+  .page1 {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .mainPage1{
+    width: 100%;
+  
+  }
+  .side1{
+    width: 100%;
+  }
+}

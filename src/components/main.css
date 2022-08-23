@@ -14,10 +14,10 @@
   color: rgba(206, 206, 206, 255);
   font-size: 1.3em;
 }
-.sidebar i:nth-child(1){
+/* .sidebar i:nth-child(1){
 color:rgba(60, 211, 156, 255);
 font-size: 2em;
-}
+} */
 .sidebar i:hover {
   border-radius: 50%;
   color: rgba(60, 211, 156, 255);
@@ -79,7 +79,7 @@ object-fit: contain;
 }
 .chartContainer {
   width: 100%;
-  height: 40%;
+  height: 46%;
   display: flex;
 }
 .chart {
@@ -197,6 +197,9 @@ object-fit: contain;
     width: 10%;
     color: rgba(60, 211, 156, 255);
     top: 5%;
+}
+.active i{
+  color: rgba(60, 211, 156, 0.885);
 }
 @media only screen and (max-width: 600px) {
   * {
