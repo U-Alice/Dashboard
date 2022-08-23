@@ -1,0 +1,347 @@
+* {
+  box-sizing: border-box;
+}
+.sidebar {
+  height: 100vh;
+  width: 5.15%;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  padding: 1.5%;
+}
+.sidebar i {
+  margin-bottom: 5vh;
+  color: rgba(206, 206, 206, 255);
+  font-size: 1.3em;
+}
+.sidebar i:nth-child(1){
+color:rgba(60, 211, 156, 255);
+font-size: 2em;
+}
+.sidebar i:hover {
+  border-radius: 50%;
+  color: rgba(60, 211, 156, 255);
+}
+
+.bottom {
+  background-color: white;
+  margin-top: 40vh;
+}
+.bottom img {
+  border-radius: 50%;
+  width: 100%;
+  object-position: 20% 20%;
+object-fit: contain;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  height: 1%;
+  margin-top: 1%;
+}
+.navbar button, .popup button {
+  width: 10%;
+  height: 5vh;
+  background-color: rgba(60, 211, 156, 255);
+  border: none;
+  color: white;
+  border-radius: 40px;
+  font-weight: bolder;
+}
+.navbar i {
+  width: 5%;
+  background-color: transparent;
+}
+.stat {
+  background-color: white;
+  border-radius: 10%;
+  display: flex;
+  width: 18%;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 30vh;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  font-size: 1.5em;
+}
+.stat i {
+  color: rgba(60, 211, 156, 255);
+  margin-bottom: 5%;
+  font-size: 2em;
+}
+.statContainer {
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  gap: 2%;
+}
+.chartContainer {
+  width: 100%;
+  height: 40%;
+  display: flex;
+}
+.chart {
+  background-color: white;
+  /* width: 100%;
+  height: 90%; */
+}
+.charts {
+  width: 100%;
+}
+.stories td {
+  max-width: 5%;
+  color: rgb(151, 149, 149);
+  font-weight: bolder;
+  text-align: center;
+}
+.stories tr {
+  height: 5vh;
+  padding-left: 1%;
+}
+.stories {
+  margin-left: 2%;
+}
+.stories tr:hover {
+  background-color: white;
+  border-radius: 5%;
+}
+
+.team img {
+  border-radius: 50%;
+  width: 20%;
+  height: 4vh;
+  object-fit: cover;
+}
+.team {
+  background-color: white;
+  padding: 1%;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+}
+.person {
+  display: flex;
+  gap: 1%;
+}
+.navigation {
+  width: 16%;
+  padding-left: 1%;
+  background-color: white;
+  margin-left: 2%;
+}
+.members {
+  display: flex;
+  gap: 4%;
+  margin-top: 10%;
+}
+.members h6 {
+  background-color: lavender;
+  width: 20%;
+  border-radius: 50%;
+  height: 5vh;
+  text-align: center;
+  display: flex;
+  font-size: 1em;
+  align-items: center;
+  justify-content: center;
+}
+.members div h2 {
+  font-size: 1em;
+  font-weight: 500;
+}
+.members div p {
+  font-size: 1em;
+  font-weight: lighter;
+}
+.project {
+  display: flex;
+  background-color: rgba(245, 246, 250, 255);
+  width: 100%;
+  margin-bottom: 10%;
+  height: 5vh;
+  border-radius: 10px;
+  padding: 2%;
+  font-size: 0.9em;
+  gap: 8%;
+}
+.statistic,
+.epics {
+  width: 90%;
+  margin-top: 10%;
+}
+.project p:nth-child(2) {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 2.5px solid rgba(60, 211, 156, 255);
+}
+.popup{
+    position: absolute;
+    top: 38%;
+    left: 26%;
+    background-color: rgb(226, 225, 225);
+    width: 30%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.close{
+    position: absolute;
+    right: 0;
+    width: 10%;
+    color: rgba(60, 211, 156, 255);
+    top: 5%;
+}
+@media only screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  tr {
+    width: 100%;
+  }
+  .App {
+    flex-direction: column;
+  }
+  .sidebar {
+    flex-direction: row;
+    width: 100%;
+    height: 5vh;
+    flex-wrap: nowrap;
+  }
+  .chartContainer {
+    flex-direction: column;
+  }
+  .navbar button {
+    margin-top: 2%;
+    width: 80%;
+  }
+  .navbar {
+    margin-bottom: 5%;
+  }
+  .stories {
+    width: 100%;
+    margin: 0;
+  }
+  .navbar i {
+    margin-top: 2%;
+    width: 20%;
+  }
+  .stat {
+    width: 40%;
+    margin-bottom: 1%;
+  }
+  .statContainer {
+    justify-content: space-around;
+  }
+  .person {
+    flex-wrap: wrap;
+    width: 40%;
+    gap: 2%;
+  }
+  .team {
+    justify-content: space-between;
+    padding-left: 10%;
+    flex-wrap: wrap;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 98%;
+  }
+  .statistic,
+  .epics {
+    width: 90%;
+  }
+  .project {
+    width: 100%;
+  }
+  .popup{
+    width: 80%;
+    left:10%;
+  }
+
+  .sidebar i:nth-child(1){
+    font-size: 1em;
+  }
+  .sidebar img{
+    width: 80%;
+    height: 95%;
+    object-fit: cover;
+    object-position: 20% 20%;
+  }
+  .main{
+    padding: 1%;
+  }
+
+}
+@media only screen and (max-width: 1084px ) and (min-width:600px) {
+    .main{
+        padding: 1%;
+    }
+  .sidebar {
+    flex-direction: row;
+    width: 100%;
+    height: 5vh;
+    flex-wrap: nowrap;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+  }
+  .sidebar{
+    width: 100%;
+  }
+  .team {
+    width: 100%;
+  }
+  .statistic,
+  .epics {
+    width: 50%;
+  }
+  .project {
+    width: 80%;
+  }
+  .stat {
+    width: 40%;
+    margin-bottom: 1%;
+  }
+  .statContainer {
+    justify-content: space-around;
+  } 
+  .person {
+    /* flex-wrap: wrap; */
+    width: 40%;
+    margin-bottom: 2%;
+
+    gap: 2%;
+  }
+  .team {
+    justify-content: space-between;
+    padding-left: 10%;
+    flex-wrap: wrap;
+  }
+  .sidebar img{
+    width: 50%;
+    height: 95%;
+    object-fit: cover;
+    object-position: 20% 20%;
+  }
+  .bottom{
+    display: flex;
+    margin: 0;
+  }
+  .popup{
+    width: 80%;
+    left:10%;
+  }
+}
