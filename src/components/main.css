@@ -8,6 +8,7 @@
   background-color: white;
   flex-direction: column;
   padding: 1.5%;
+  box-shadow: 1px 1px 2px 1px rgb(228, 226, 226);
 }
 .sidebar i {
   margin-bottom: 5vh;
@@ -46,6 +47,8 @@ object-fit: contain;
   height: 5vh;
   background-color: rgba(60, 211, 156, 255);
   border: none;
+  box-shadow: 2px 2px 2px 2px rgba(203, 218, 211, 0.885);
+
   color: white;
   border-radius: 40px;
   font-weight: bolder;
@@ -56,12 +59,13 @@ object-fit: contain;
 }
 .stat {
   background-color: white;
-  border-radius: 10%;
+  border-radius: 6%;
   display: flex;
   width: 18%;
   flex-direction: column;
   justify-content: flex-end;
   height: 30vh;
+  box-shadow: 2px 2px 2px 2px rgb(236, 224, 224);
   padding-bottom: 2%;
   padding-left: 2%;
   font-size: 1.5em;
@@ -79,13 +83,15 @@ object-fit: contain;
 }
 .chartContainer {
   width: 100%;
-  height: 46%;
+  height: fit-content;
   display: flex;
 }
 .chart {
   background-color: white;
-  /* width: 100%;
-  height: 90%; */
+  box-shadow: 4px 4px 4px 4px rgb(230, 228, 228);
+  border-radius: 6%;
+  padding: 1%;
+
 }
 .charts {
   width: 100%;
@@ -94,7 +100,6 @@ object-fit: contain;
   max-width: 5%;
   color: rgb(151, 149, 149);
   font-weight: bolder;
-  text-align: center;
 }
 .stories tr {
   height: 5vh;
@@ -102,22 +107,26 @@ object-fit: contain;
 }
 .stories {
   margin-left: 2%;
+  height: fit-content;
 }
 .stories tr:hover {
   background-color: white;
-  border-radius: 5%;
+  border-radius: 5px;
 }
 
-.team img {
+.team img { 
   border-radius: 50%;
   width: 20%;
   height: 4vh;
   object-fit: cover;
 }
 .team {
+  box-shadow: 4px 4px 4px 4px rgb(230, 228, 228);
+
   background-color: white;
   padding: 1%;
   width: 100%;
+  height: 10%;
   border-radius: 20px;
   display: flex;
 }
@@ -126,14 +135,16 @@ object-fit: contain;
   gap: 1%;
 }
 .navigation {
-  width: 16%;
+  width: 20%;
   padding-left: 1%;
+  box-shadow: 4px 4px 4px 4px rgb(224, 223, 223);
   background-color: white;
   margin-left: 2%;
 }
 .members {
   display: flex;
   gap: 4%;
+  width: 100%;
   margin-top: 10%;
 }
 .members h6 {
@@ -147,9 +158,14 @@ object-fit: contain;
   align-items: center;
   justify-content: center;
 }
+.members i{
+  width: 0%;
+  color: rgb(151, 149, 149);
+}
 .members div h2 {
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 300;
+  margin-bottom: 1%;
 }
 .members div p {
   font-size: 1em;
@@ -159,12 +175,15 @@ object-fit: contain;
   display: flex;
   background-color: rgba(245, 246, 250, 255);
   width: 100%;
-  margin-bottom: 10%;
+  margin-top: 10%;
   height: 5vh;
   border-radius: 10px;
+
   padding: 2%;
   font-size: 0.9em;
   gap: 8%;
+  padding-left: 10%;
+  font-weight: 500;
 }
 .statistic,
 .epics {
@@ -172,13 +191,16 @@ object-fit: contain;
   margin-top: 10%;
 }
 .project p:nth-child(2) {
-  width: 50%;
+  width: 8vw;
   height: 90%;
   display: flex;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
   border: 2.5px solid rgba(60, 211, 156, 255);
+}
+.project p:nth-child(3){
+  font-weight: 200;
 }
 .popup{
     position: absolute;
@@ -310,6 +332,7 @@ object-fit: contain;
   .statistic,
   .epics {
     width: 50%;
+
   }
   .project {
     width: 80%;

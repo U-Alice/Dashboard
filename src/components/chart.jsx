@@ -1,46 +1,13 @@
+import { useState } from 'react';
+import { useEffect } from 'react';
 import './main.css';
 import MainChart from './mainChart';
+import axios from 'axios';
 
-
-export function Chart() {
-  const data = [
-    {
-      id: "p12",
-      name: 'User Profile',
-      status: "Delivered",
-      number: 3,
-    },
-    {
-        id: "p12",
-        name: 'User Profile',
-        status: "Delivered",
-        number: 3,
-      },
-      {
-        id: "p12",
-        name: 'User Profile',
-        status: "Delivered",
-        number: 3,
-      },
-      {
-        id: "p12",
-        name: 'User Profile',
-        status: "Delivered",
-        number: 3,
-      },
-      {
-        id: "p12",
-        name: 'User Profile',
-        status: "Delivered",
-        number: 3,
-      },
-      {
-        id: "p12",
-        name: 'User Profile',
-        status: "Delivered",
-        number: 3,
-      },
-  ];
+export function Chart({getUsers, clients, setUserId, getUserById, userId}) {
+  useEffect(()=>{
+    getUsers()
+}, [])
   return (
     <div className="chartContainer">
       <div className="charts">
@@ -51,22 +18,26 @@ export function Chart() {
       </div>
 
       <div className="stories">
-        <h3>Sprint Stories</h3>
-        {data.map((item) => {
+        <h3>Current Clients</h3>
+        <table cellSpacing={0}>
+          <tbody>
+        {clients.map((item) => {
           return (
-            <table cellSpacing={0}>
-              <tbody>
-                <tr>
-                  <td>{item.id}</td>
-                  <td>{item.name}</td>
-                  <td>{item.status}</td>
-                  <td>{item.number}</td>
+                <tr onClick={()=>{
+                  setUserId(item.clientId)
+                  getUserById()
+                  console.log(userId)
+                }}>
+                  <td>{item.clientId}</td>
+                  <td>{item.firstName}</td>
+                  <td>{item.lastName}</td>
+                  <td>{item.location}</td>
                   <td><i className="fa-solid fa-ellipsis"></i></td>
                 </tr>
-              </tbody>
+              );
+            })}
+            </tbody>
             </table>
-          );
-        })}
       </div>
     </div>
   );

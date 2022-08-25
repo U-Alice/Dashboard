@@ -26,6 +26,7 @@ export function Navigation() {
                 <h2>{item.name}</h2>
                 <p>{item.name}</p>
               </div>
+                <i class="fa-solid fa-ellipsis"></i>
             </div>
           );
         })}

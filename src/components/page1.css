@@ -138,11 +138,18 @@ color: rgb(226, 226, 226);
 @media only screen and (max-width: 600px) {
   .page1 {
     flex-direction: column;
-    height: fit-content;
-  }
-  .header{
-    height: 10vh;
-    flex-wrap: wrap;
+    /* height: fit-content; */
+    /* gap: 4vh; */
+    }
+    .info div{
+      width: 30%;
+      margin-bottom: 2%;
+    }
+    .header{
+      height: 10vh;
+      flex-wrap: wrap;
+      margin-top: 4vh;
+      margin-bottom: 4vh;
   }
   .mainPage1{
     width: 100%;
@@ -156,5 +163,8 @@ color: rgb(226, 226, 226);
     flex-wrap: wrap;
     height: fit-content;
     margin-left: 2%;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+
   }
 }
