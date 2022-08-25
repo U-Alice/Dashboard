@@ -58,7 +58,7 @@ export default function Page3() {
             return (
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9nb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                  src="https://img.icons8.com/external-sbts2018-outline-color-sbts2018/2x/external-cars-basic-ui-elements-2.3-sbts2018-outline-color-sbts2018.png"
                   alt=""
                 />
                 <h4>{item.companyName}</h4>
