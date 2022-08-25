@@ -63,17 +63,27 @@ object-fit: contain;
   display: flex;
   width: 18%;
   flex-direction: column;
-  justify-content: flex-end;
-  height: 30vh;
+  justify-content: center;
+  height: 25vh;
   box-shadow: 2px 2px 2px 2px rgb(236, 224, 224);
   padding-bottom: 2%;
   padding-left: 2%;
-  font-size: 1.5em;
+}
+.stat h6{
+  color: rgba(32, 34, 33, 0.885);
+  font-size: 2em;
+}
+
+  
+
+.stat div{
+  display: flex;
+  width: 30%;
 }
 .stat i {
+  font-size: 4em;
   color: rgba(60, 211, 156, 255);
   margin-bottom: 5%;
-  font-size: 2em;
 }
 .statContainer {
   flex-wrap: wrap;
@@ -91,7 +101,6 @@ object-fit: contain;
   box-shadow: 4px 4px 4px 4px rgb(230, 228, 228);
   border-radius: 6%;
   padding: 1%;
-
 }
 .charts {
   width: 100%;
@@ -178,7 +187,6 @@ object-fit: contain;
   margin-top: 10%;
   height: 5vh;
   border-radius: 10px;
-
   padding: 2%;
   font-size: 0.9em;
   gap: 8%;

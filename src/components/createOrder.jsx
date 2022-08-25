@@ -8,6 +8,7 @@ export default function CreateOrder(){
     })
     const handleChange = (e)=>{
         setData({...data, [e.target.name]: e.target.value})
+        
     }
     const createOrder = async()=>{
         const api = await axios.post("http://localhost:5000/orders/createOrder/1", {
@@ -15,6 +16,7 @@ export default function CreateOrder(){
         })
         const response = await api.data
         console.log(response)
+        setData("")
     }
     return (
         <div className="team">

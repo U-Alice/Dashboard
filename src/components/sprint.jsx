@@ -34,7 +34,11 @@ export function Overview({ userId, setUserId }) {
             <div className="stat">
               <i class="fa-solid fa-arrow-up-right-dots"></i>
               <h6>{item.companyName}</h6>
-              <h1>{item.CompanyId}</h1>
+              <div>
+
+              <h1>{item.orders}</h1>
+              <p>Orders</p>
+              </div>
             </div>
           );
         })}

@@ -8,7 +8,7 @@ export default function Page3() {
   const [allCargo, setCargo] = useState([]);
   const [CargoName, setCargoName] =useState("")
   const [transported, setTransported] =useState("")
-  const [Orders, GetOrders] =useState("")
+  const [Orders, setOrders] =useState("")
 
 
   const getCargo = async () => {
@@ -23,9 +23,9 @@ export default function Page3() {
     console.log(transported)
   };
   const getOrders =async ()=>{
-    const api = await axios.get(`http://localhost:5000/orders/getPaid/${CargoName}`);
+    const api = await axios.get(`http://localhost:5000/orders/getOrders`);
     const response = api.data;
-    setTransported(response.result);
+    setOrders(response.result);
   }
   useEffect(() => {
     getCargo();
@@ -72,34 +72,7 @@ export default function Page3() {
           
           <div>
             <div className="grid">
-              <div>
-                <i class="fa-solid fa-square-virus"></i>
-                <p>Courses</p>
-              </div>
-              <div>
-                <i class="fa-solid fa-square-virus"></i>
-                <p>Courses</p>
-              </div>
-              <div>
-                <i class="fa-solid fa-square-virus"></i>
-                <p>Courses</p>
-              </div>
-              <div>
-                <i class="fa-solid fa-square-virus"></i>
-                <p>Courses</p>
-              </div>
-              <div>
-                <i class="fa-solid fa-square-virus"></i>
-                <p>Courses</p>
-              </div>
-              <div>
-                <i class="fa-solid fa-square-virus"></i>
-                <p>Courses</p>
-              </div>
-              <div>
-                <i class="fa-solid fa-square-virus"></i>
-                <p>Courses</p>
-              </div>
+              {orders?.map((itemm))}
               <div>
                 <i class="fa-solid fa-square-virus"></i>
                 <p>Courses</p>
